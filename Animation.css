@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  text-decoration: underline;
+}
+#translate {
+  background-color: red;
+  height: 100px;
+  /* transform: translateX(200px);
+    transform: translateY(300px);*/
+  transform: translate(200px, 300px);
+}
+#scale {
+  width: 100px;
+  height: 100px;
+  background-color: midnightblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+#scale:hover {
+  transform: scale(2);
+  /* scale is used to resise the object */
+}
+.rotate {
+  width: 100px;
+  height: 100px;
+  background-color: midnightblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  transition: transform 8s;
+}
+/* rotate X and Y are 2d while rotate z is 3d */
+.rotate:hover {
+  transform: rotateZ(360deg);
+}
+.skew {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 30px;
+  transform: skewX(45deg);
+}
+/* Transition styling */
+.transition {
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  /* padding: 25px 20px; */
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: all;
+  /* transition: background-color 5s;
+    or */
+  transition-duration: 5s;
+  /* ease in and ease out means starting and ending slowly */
+  transition-timing-function: ease-in-out;
+}
+.transition:hover {
+  background-color: midnightblue;
+  color: white;
+  transition-delay: 3s;
+}
+/* Card html styles */
+#fruitcard1 {
+  text-align: center;
+  text-decoration: none;
+}
+.fruitcontainer {
+  display: flex;
+  justify-content: space-around;
+}
+.fruitcard {
+  background-color: orange;
+  padding: 1rem;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.fruitcard:nth-child(1) img {
+  width: 500px;
+  height: 550px;
+}
+.fruitcard:nth-child(2) img {
+  width: 500px;
+  height: 550px;
+}
+.fruitcard:nth-child(3) img {
+  width: 500px;
+  height: 550px;
+}
+.fruitcard:hover {
+  transform: scaleY(1.2);
+}
+/* Css animation using keyframes */
+.circle {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 7rem;
+}
+.circle :hover {
+  animation-name: slider;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes slider {
+  0% {
+    transform: translateY(-400px);
+  }
+  50% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

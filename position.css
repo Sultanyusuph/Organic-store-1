@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headingtwo{
+    background-color:rgb(216, 19, 19) ;
+    padding: 14px 5px;
+    position: relative;
+    top: 2rem;
+    left: 3rem;
+    right: 5rem;
+}
+.card{
+    margin-top: 2rem;
+    background-color: blue;
+    height: 40vh ;
+    position: relative;
+}
+.cardcontent{
+    background-color: green;
+    position: absolute;
+    bottom:50%;
+    right: 50%;
+}
+#thirdtext{
+    background-color: gold;
+    position: absolute;
+    top: 0;
+}                 
+.productcontainer{
+    background-color: wheat;
+}
+/* .productcontainer img{
+    width: 20%;
+    display: block;
+} */
+ .productcontainer{
+    background-color: midnightblue;
+    height: 40vh;
+    width: 380px;
+    margin:0 auto;
+    position: relative;
+    padding: 10rem;
+    margin-top: 4rem;
+ }
+ #Oranges{
+    background-color: orange;
+    width: fit-content;
+    padding: 5px 15px;
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ }
+ .fixed{
+background-color: aquamarine;
+position: fixed;
+top: 4rem;
+ }
+ .container h1{
+    font-size: 20px;
+ }
+ .container p{
+    font-size: 3rem;
+ }
